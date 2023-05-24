@@ -7,20 +7,20 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LoginView: View {
+    
+    @ObservedObject var state = LoginState()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
             Text("Hello, world!")
         }
         .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LoginView()
     }
 }

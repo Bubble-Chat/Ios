@@ -8,17 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		588E6CEA2A1DFA3F00063E6C /* BubbleChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E6CE92A1DFA3F00063E6C /* BubbleChatApp.swift */; };
-		588E6CEC2A1DFA3F00063E6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E6CEB2A1DFA3F00063E6C /* ContentView.swift */; };
+		588E6CEC2A1DFA3F00063E6C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E6CEB2A1DFA3F00063E6C /* LoginView.swift */; };
 		588E6CEE2A1DFA4000063E6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 588E6CED2A1DFA4000063E6C /* Assets.xcassets */; };
 		588E6CF12A1DFA4000063E6C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 588E6CF02A1DFA4000063E6C /* Preview Assets.xcassets */; };
+		588E6CFF2A1DFBF500063E6C /* LoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E6CFE2A1DFBF500063E6C /* LoginState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		588E6CE62A1DFA3F00063E6C /* BubbleChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubbleChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		588E6CE92A1DFA3F00063E6C /* BubbleChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleChatApp.swift; sourceTree = "<group>"; };
-		588E6CEB2A1DFA3F00063E6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		588E6CEB2A1DFA3F00063E6C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		588E6CED2A1DFA4000063E6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		588E6CF02A1DFA4000063E6C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		588E6CFB2A1DFB5B00063E6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		588E6CFE2A1DFBF500063E6C /* LoginState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +54,9 @@
 		588E6CE82A1DFA3F00063E6C /* BubbleChat */ = {
 			isa = PBXGroup;
 			children = (
+				588E6CFB2A1DFB5B00063E6C /* Info.plist */,
 				588E6CE92A1DFA3F00063E6C /* BubbleChatApp.swift */,
-				588E6CEB2A1DFA3F00063E6C /* ContentView.swift */,
+				588E6CF72A1DFAF100063E6C /* Features */,
 				588E6CED2A1DFA4000063E6C /* Assets.xcassets */,
 				588E6CEF2A1DFA4000063E6C /* Preview Content */,
 			);
@@ -65,6 +69,55 @@
 				588E6CF02A1DFA4000063E6C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		588E6CF72A1DFAF100063E6C /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				588E6CF82A1DFAF500063E6C /* View */,
+				588E6CFA2A1DFB3E00063E6C /* State */,
+				588E6CF92A1DFAF800063E6C /* Model */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		588E6CF82A1DFAF500063E6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				588E6CFC2A1DFBAD00063E6C /* Login */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		588E6CF92A1DFAF800063E6C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		588E6CFA2A1DFB3E00063E6C /* State */ = {
+			isa = PBXGroup;
+			children = (
+				588E6CFD2A1DFBD800063E6C /* Login */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		588E6CFC2A1DFBAD00063E6C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				588E6CEB2A1DFA3F00063E6C /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		588E6CFD2A1DFBD800063E6C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				588E6CFE2A1DFBF500063E6C /* LoginState.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +190,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				588E6CEC2A1DFA3F00063E6C /* ContentView.swift in Sources */,
+				588E6CEC2A1DFA3F00063E6C /* LoginView.swift in Sources */,
+				588E6CFF2A1DFBF500063E6C /* LoginState.swift in Sources */,
 				588E6CEA2A1DFA3F00063E6C /* BubbleChatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +324,7 @@
 				DEVELOPMENT_TEAM = 8RGKJ6S53F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BubbleChat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +354,7 @@
 				DEVELOPMENT_TEAM = 8RGKJ6S53F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BubbleChat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
