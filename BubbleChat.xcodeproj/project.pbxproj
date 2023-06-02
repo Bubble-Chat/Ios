@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		582E661A2A2A2ABA0027C20C /* LoginmainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582E66192A2A2ABA0027C20C /* LoginmainView.swift */; };
 		588E6CEA2A1DFA3F00063E6C /* BubbleChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E6CE92A1DFA3F00063E6C /* BubbleChatApp.swift */; };
 		588E6CEC2A1DFA3F00063E6C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E6CEB2A1DFA3F00063E6C /* LoginView.swift */; };
 		588E6CEE2A1DFA4000063E6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 588E6CED2A1DFA4000063E6C /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		582E66192A2A2ABA0027C20C /* LoginmainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginmainView.swift; sourceTree = "<group>"; };
 		588E6CE62A1DFA3F00063E6C /* BubbleChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubbleChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		588E6CE92A1DFA3F00063E6C /* BubbleChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleChatApp.swift; sourceTree = "<group>"; };
 		588E6CEB2A1DFA3F00063E6C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		588E6CF92A1DFAF800063E6C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				588E6D002A1DFFEC00063E6C /* Login */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -108,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				588E6CEB2A1DFA3F00063E6C /* LoginView.swift */,
+				582E66192A2A2ABA0027C20C /* LoginmainView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -116,6 +120,13 @@
 			isa = PBXGroup;
 			children = (
 				588E6CFE2A1DFBF500063E6C /* LoginState.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		588E6D002A1DFFEC00063E6C /* Login */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -193,6 +204,7 @@
 				588E6CEC2A1DFA3F00063E6C /* LoginView.swift in Sources */,
 				588E6CFF2A1DFBF500063E6C /* LoginState.swift in Sources */,
 				588E6CEA2A1DFA3F00063E6C /* BubbleChatApp.swift in Sources */,
+				582E661A2A2A2ABA0027C20C /* LoginmainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
